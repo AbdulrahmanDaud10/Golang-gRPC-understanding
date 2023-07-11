@@ -3,6 +3,8 @@ package main
 import (
 	"log"
 	"net"
+
+	"google.golang.org/grpc"
 )
 
 func main() {
@@ -10,5 +12,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
+
+	gRPCServer := grpc.NewServer()
 
 }
