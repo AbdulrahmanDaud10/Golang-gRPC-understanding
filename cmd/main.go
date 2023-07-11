@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net"
 
@@ -14,5 +15,6 @@ func main() {
 	}
 
 	gRPCServer := grpc.NewServer()
+	fmt.Println("---------", gRPCServer)
 
 }
